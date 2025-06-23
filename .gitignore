@@ -1,0 +1,60 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# 🛠 Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+Pipfile.lock
+poetry.lock
+
+# 📦 Python Package Management
+*.db
+*.sqlite3
+*.sqlite
+
+# 📁 Django Static & Media
+/staticfiles/
+/media/
+
+# 📄 Django Migrations (optional)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+/migrations/*.pyc
+!/migrations/__init__.py
+
+# 💾 VS Code / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 📊 Coverage & Testing
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+.junit.xml
+
+# 🔐 Secret or Config Files
+.env
+.env.*
+*.local
+
+# 📂 OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 📜 Compiled Files
+*.mo
+*.pot

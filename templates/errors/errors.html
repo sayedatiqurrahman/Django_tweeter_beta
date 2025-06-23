@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+<div class="container bg-white">
+  <h1 class="text-danger">
+    {% if status %} {{status}} {% else %} 404 {% endif %}
+  </h1>
+
+  <p class="text-danger">
+    {% if message %} {{message}} {% else %} Page Not Found {% endif %}
+  </p>
+</div>

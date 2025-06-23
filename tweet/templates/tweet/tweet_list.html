@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block title %}Tweets{% endblock %} 
+<>
+{% block content %}
+<div class="container">
+   <form method="GET" action="{% url 'tweet_list' %}" class="mb-3 d-flex gap-3 ">
+      <input type="text" name="q" placeholder="Search tweets..." value="{{ query }}" class="form-control" />
+      <button type="submit" class="btn btn-primary ">Search</button>
+      <a class="btn btn-primary px-3 py-2 text-nowrap" href="{% url "create_tweet" %}">Create Tweet</a>
+  </form>
+
+
+
+   <div class="container row gap-3">
+    {% for tweet in tweets %}
+    <div class="card " style="width: 18rem;">
+        <img src="{{tweet.photo.url}}" class="card-img-top" alt="...">
+        <div class="d-flex flex-column card-body">
+          <h5 class="card-title">{{tweet.user.username}}</h5>
+          <p class="card-text">{{tweet.content}}</p>
+
+
+          {% if tweet.user == user %}
+       <div class="d-flex mt-auto justify-content-center gap-2 mt-auto"> 
+        <a method="POST" href="{% url "tweet_delete" tweet.id %}" class="btn btn-danger">🗑️ Delete</a>
+        <a method="POST" href="{% url "tweet_edit" tweet.id %}" class="btn btn-primary">📝 Edit</a>
+    </div>
+       {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+   </div>
+</div>
+
+{% endblock %}
+</>

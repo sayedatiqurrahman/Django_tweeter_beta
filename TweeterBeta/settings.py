@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dzj7mngb59gr6ock^^4hzb6*gk)hh+!l!h^xna!!9ax4ux#q^!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-tweeter-beta-prpp.vercel.app']
 
 
 # Application definition

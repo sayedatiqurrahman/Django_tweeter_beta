@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-Sure! Here's the full expanded document including all your previous contents along with the updated folder/file creation commands and auth templates setup:
-
----
-=======
-
->>>>>>> 7a6841a93c0355068292fe73d44429a27e0d898e
 
 # 🐍 Django Professional Project Quick Setup (README Guide)
 
@@ -40,8 +33,6 @@ python -m venv .venv
 pip install django
 ```
 
-<<<<<<< HEAD
-=======
   ## 2.1 Install Existing Project Dependencies
   
   ```bash
@@ -49,7 +40,6 @@ pip install django
   ```
 
 
->>>>>>> 7a6841a93c0355068292fe73d44429a27e0d898e
 ### 3. Save Requirements
 
 ```bash

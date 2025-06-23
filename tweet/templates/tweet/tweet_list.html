@@ -11,7 +11,6 @@
 
 
    <div class="container row gap-3">
-   {% if tweets %}
    
     {% for tweet in tweets %}
     <div class="card " style="width: 18rem;">
@@ -31,9 +30,7 @@
       </div>
     {% endfor %}
 
-    {% else %}
-    <p text="text-danger">0 Tweets Found</p>
-    {% endif %}
+
    </div>
 </div>
 

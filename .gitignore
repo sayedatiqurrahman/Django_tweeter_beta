@@ -21,9 +21,6 @@ poetry.lock
 *.sqlite3
 *.sqlite
 
-# 📁 Django Static & Media
-/staticfiles/
-/media/
 
 # 📄 Django Migrations (optional)
 **/migrations/*.pyc

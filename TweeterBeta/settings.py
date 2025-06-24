@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-dzj7mngb59gr6ock^^4hzb6*gk)hh+!l!h^xna!!9ax4ux#q^!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-tweeter-beta-prpp.vercel.app']
+ALLOWED_HOSTS = ['django-tweeter-beta-prpp.vercel.app','.vercel.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -80,9 +82,9 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
+        default=os.environ.get("DATABASE_URL"),
         conn_max_age=600,
-        conn_health_checks=True,
+        conn_health_checks=True
     )
 }
 
@@ -130,7 +132,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 LOGIN_URL ='/accounts/login' 
 
 LOGIN_REDIRECT_URL ='/tweet/' 
-LOGOUT_REDIRECT_URL ='/tweet/' 
+LOGOUT_REDIRECT_URL ='/' 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

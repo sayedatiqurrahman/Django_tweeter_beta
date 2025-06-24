@@ -55,3 +55,5 @@ desktop.ini
 # 📜 Compiled Files
 *.mo
 *.pot
+.vercel
+.env*.local
